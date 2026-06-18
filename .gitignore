@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/mcp_sample/.vs/mcp_sample.slnx/FileContentIndex
+/mcp_sample/.vs/mcp_sample.slnx/v18
+/mcp_sample/demomcp.client/bin/Debug/net10.0
+/mcp_sample/demomcp.client/obj
+/mcp_sample/demomcp.server/bin/Debug/net10.0
+/mcp_sample/demomcp.server/obj
+/mcp_sample/.vs

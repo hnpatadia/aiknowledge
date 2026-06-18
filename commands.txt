@@ -1,0 +1,38 @@
+https://mcpplaygroundonline.com/dashboard
+https://github.com/inngest/agentkit-render-tutorial
+
+
+=========================================== MCP Server
+dotnet new web -n DemoMcp
+cd DemoMcp
+
+dotnet add package ModelContextProtocol.AspNetCore
+
+using ModelContextProtocol.Server;
+
+var builder = WebApplication.CreateBuilder(args);
+
+builder.Services
+    .AddMcpServer()
+    .WithHttpTransport()
+    .WithToolsFromAssembly();
+
+var app = builder.Build();
+
+app.MapMcp();
+
+app.Run();
+
+
+============================ MCP Client
+Option 1: Postman
+Option 2: Dedicated .NET client
+Option 3: MCP Inspector 
+	npx @modelcontextprotocol/inspector
+	
+	
+============================ Learnings 
+1) MCP SDK for .net and other platforms.
+2) Protocols support for each SDK (SSE, 
+3) HTTP Pipeline: specially, text/event-stream
+4) 

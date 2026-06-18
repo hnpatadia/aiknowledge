@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="demomcp.client/demomcp.client.csproj" Id="81626120-338c-4d27-aa68-f063de8a82e9" />
+  <Project Path="demomcp.server/demomcp.server.csproj" />
+</Solution>
