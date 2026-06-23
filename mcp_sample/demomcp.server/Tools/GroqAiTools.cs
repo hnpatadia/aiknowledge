@@ -18,4 +18,11 @@ public sealed class GroqAiTools
     {
         return await _groq.AskAsync(prompt);
     }
+
+    [McpServerTool]
+    [Description("Ask an Groq AI model streaming")]
+    public async Task<string> AskGroqAIStreaming(string prompt)
+    {
+        return await _groq.AskStreamingAsync(prompt);
+    }
 }
