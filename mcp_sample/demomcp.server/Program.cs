@@ -1,4 +1,6 @@
 
+using demomcp.server.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services
@@ -8,6 +10,9 @@ builder.Services
         options.Stateless = true;
     })
     .WithToolsFromAssembly();
+
+builder.Services.AddSingleton<GroqService>();
+builder.Services.AddSingleton<OpenAIService>();
 
 builder.Services.AddCors(options =>
 {
