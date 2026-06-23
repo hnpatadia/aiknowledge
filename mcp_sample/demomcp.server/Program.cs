@@ -9,6 +9,17 @@ builder.Services
     })
     .WithToolsFromAssembly();
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("mcp", policy =>
+    {
+        policy
+            .AllowAnyOrigin()
+            .AllowAnyHeader()
+            .AllowAnyMethod();
+    });
+});
+
 var app = builder.Build();
 
 app.MapMcp("mcp");
