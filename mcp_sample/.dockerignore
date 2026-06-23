@@ -1,0 +1,14 @@
+.vs
+.git
+.gitignore
+
+bin
+obj
+
+**/bin
+**/obj
+
+*.user
+*.suo
+*.cache
+*.vsidx
