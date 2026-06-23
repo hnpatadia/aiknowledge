@@ -2,9 +2,9 @@ FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 
 WORKDIR /src
 
-COPY . .
+COPY .\demomcp.server .
 
-RUN dotnet publish demomcp.server.csproj \
+RUN dotnet publish .\demomcp.server\demomcp.server.csproj \
     -c Release \
     -o /app/publish
 
