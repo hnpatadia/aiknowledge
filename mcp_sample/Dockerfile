@@ -4,7 +4,7 @@ WORKDIR /src
 
 COPY . .
 
-RUN dotnet publish DemoMcp.Server/DemoMcp.Server.csproj \
+RUN dotnet publish DemoMcp.Server.csproj \
     -c Release \
     -o /app/publish
 
