@@ -4,7 +4,7 @@ WORKDIR /src
 
 COPY . .
 
-RUN dotnet publish DemoMcp.Server.csproj \
+RUN dotnet publish demomcp.server.csproj \
     -c Release \
     -o /app/publish
 
@@ -18,4 +18,4 @@ ENV ASPNETCORE_URLS=http://+:8080
 
 EXPOSE 8080
 
-ENTRYPOINT ["dotnet", "DemoMcp.Server.dll"]
+ENTRYPOINT ["dotnet", "demomcp.server.dll"]
