@@ -12,3 +12,7 @@
 /ai_agent_sample/mcp_agent/.vs
 /ai_agent_sample/mcp_agent/bin/Debug/net10.0
 /ai_agent_sample/mcp_agent/obj
+/ai_agent_sample/agent.mcp-inprocess/.vs
+/ai_agent_sample/agent.mcp-inprocess/bin/Debug/net10.0
+/ai_agent_sample/agent.mcp-inprocess/bin/Debug/net10.0/appsettings.Development.json
+/ai_agent_sample/agent.mcp-inprocess/obj
