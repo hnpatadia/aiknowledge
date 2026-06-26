@@ -19,7 +19,6 @@ builder.Services
         options.Stateless = true;
     })
     .WithToolsFromAssembly();
-builder.Services.AddSingleton<WeatherService>();
 
 builder.Services.AddSingleton<IChatClient>(sp =>
 {
