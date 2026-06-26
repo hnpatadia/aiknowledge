@@ -1,7 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.AI;
 using OpenAI;
-using ModelContextProtocol.Server;
 using ModelContextProtocol.Client;
 
 
