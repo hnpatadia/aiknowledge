@@ -1,7 +1,7 @@
 ﻿using ModelContextProtocol.Server;
 using System.ComponentModel;
 
-namespace mcp.server.MCP
+namespace Tools
 {
     [McpServerToolType]
     public class WeatherMcpServer
