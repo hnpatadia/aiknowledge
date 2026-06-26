@@ -58,39 +58,6 @@ var app = builder.Build();
 // ============================================================================
 app.MapMcp("mcp");
 
-/*
-app.MapPost("/api/agent/ask", async ([FromBody]string prompt, IChatClient aiClient, WeatherService weatherService) =>
-{
-
-var weather = new WeatherMcpServer();
-
-var tools = new[]
-{
-    AIFunctionFactory.Create(weather.GetTemperatureAsync)
-};
-
-var inputSessionContext = new List<ChatMessage> { new ChatMessage(ChatRole.User, prompt) };
-
-try
-{
-    var response = await aiClient.GetResponseAsync(
-        inputSessionContext,
-        new ChatOptions
-        {
-            Tools = tools
-        });
-
-    return Results.Ok(new { answer = response.Text });
-
-
-}
-catch (Exception ex)
-{
-    return Results.Problem($"Agent workflow failed execution: {ex.Message}");
-}
-});
-*/
-
 app.MapPost("/api/agent/ask", async ([FromBody] string prompt, IChatClient aiClient, McpClient mcpClient) =>
 {
     var tools = (await mcpClient.ListToolsAsync())
