@@ -9,3 +9,6 @@
 /mcp_sample/demomcp.server/bin/Debug/net10.0
 /mcp_sample/demomcp.server/obj
 /mcp_sample/.vs
+/ai_agent_sample/mcp_agent/.vs
+/ai_agent_sample/mcp_agent/bin/Debug/net10.0
+/ai_agent_sample/mcp_agent/obj
