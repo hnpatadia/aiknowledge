@@ -11,6 +11,7 @@ public class GroqService
     private readonly HttpClient _httpClient;
     private readonly string _apiKey;
     private readonly ILogger<GroqService> _logger;
+    private string _llamaBVersatile = "llama-3.3-70b-versatile";
 
     public GroqService(IConfiguration configuration, ILogger<GroqService> logger)
     {
@@ -23,7 +24,7 @@ public class GroqService
     {
         var request = new
         {
-            model = "llama-3.3-70b-versatile",
+            model = _llamaBVersatile,
             messages = new[]
             {
                 new
@@ -70,7 +71,7 @@ public class GroqService
     {
         var request = new
         {
-            model = "llama-3.3-70b-versatile",
+            model = _llamaBVersatile,
             stream = true,
             messages = new[]
             {
